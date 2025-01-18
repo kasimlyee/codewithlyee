@@ -1,0 +1,58 @@
+:root {
+  --dark-blue: #1a1d3f; /* Dark blue */
+  --pink: #ff4d88;
+  --purple: #a67aff;
+  --blue: #0099ff;
+}
+
+.hero-section {
+  background-color: var(--dark-blue);
+  height: 100vh; /* Full viewport height */
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-circle {
+  position: absolute;
+  top: 20px; /* Adjust this value to move the picture vertically */
+  left: 20px; /* Adjust this value to move the picture horizontally */
+  width: 150px; /* Increase width for a larger picture */
+  height: 150px; /* Increase height for a larger picture */
+  border: 3px solid var(--pink);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  margin-top: -50px; /* Moves the text closer to the top */
+  text-align: center;
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, var(--pink), var(--purple), var(--blue));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-gradient {
+  background: linear-gradient(45deg, var(--pink), var(--purple), var(--blue));
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}

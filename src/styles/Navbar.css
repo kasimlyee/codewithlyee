@@ -1,0 +1,32 @@
+:root {
+  --dark-blue: #1a1d3f; /* Dark blue */
+  --pink: #ff4d88;
+  --purple: #a67aff;
+  --blue: #0099ff;
+}
+
+.bg-dark-blue {
+  background-color: var(--dark-blue) !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, var(--pink), var(--purple), var(--blue));
+  -webkit-background-clip: text; /* For Webkit-based browsers (e.g., Chrome, Safari) */
+  background-clip: text; /* Standard property for other browsers */
+  -webkit-text-fill-color: transparent; /* Makes the background visible within the text */
+  -webkit-text-fill-color: transparent; /* Standard property (optional, for future compatibility) */
+}
+
+.nav-link {
+  color: var(--blue) !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--pink) !important;
+}

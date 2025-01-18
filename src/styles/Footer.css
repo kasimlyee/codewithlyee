@@ -1,0 +1,72 @@
+.footer-section {
+  background-color: #1a1d3f; /* Dark blue */
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-section h5 {
+  color: var(--pink);
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color: var(--pink);
+}
+
+.input-group {
+  display: flex;
+}
+
+.input-group input {
+  border-radius: 30px 0 0 30px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.input-group .btn {
+  border-radius: 0 30px 30px 0;
+  background: linear-gradient(45deg, var(--pink), var(--purple), var(--blue));
+  color: white;
+  border: none;
+}
+
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}

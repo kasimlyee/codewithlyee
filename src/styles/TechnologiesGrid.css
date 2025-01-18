@@ -1,0 +1,49 @@
+:root {
+  --dark-blue: #1a1d3f;
+  --pink: #e91e63;
+  --purple: #9c27b0;
+  --blue: #2196f3;
+}
+
+.technologies-grid-container {
+  background-color: var(--dark-blue);
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.grid-heading {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--pink);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid var(--purple);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.grid-item p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--blue);
+}

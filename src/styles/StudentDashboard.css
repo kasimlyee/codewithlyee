@@ -1,0 +1,68 @@
+.student-dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  background: linear-gradient(to right, #000428, #004e92);
+  padding: 20px;
+  color: white;
+}
+
+.dashboard-section {
+  background: #1e1e2f;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  color: #ff007f;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+.messages {
+  max-height: 150px;
+  overflow-y: auto;
+  background: #292942;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+}
+
+.message-input button {
+  padding: 10px 20px;
+  background: #6200ea;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+.progress {
+  background: #333;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.progress-value {
+  background: #007fff;
+  height: 100%;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+}
